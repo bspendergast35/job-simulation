@@ -20,7 +20,8 @@ async function loadScenario() {
   const job = document.getElementById('job').value;
   const company = document.getElementById('company').value;
 
-  const res = await fetch('/.netlify/functions/generateScenario', {
+  const res = await fetch('https://job-simulation.onrender.com', {
+
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ job, company, scenarioNumber: scenarioCount })
