@@ -1,0 +1,8 @@
+{
+  "name": "job-simulation",
+  "version": "1.0.0",
+  "description": "Career simulation site using GPT",
+  "dependencies": {
+    "openai": "^4.20.0"
+  }
+}
