@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Career Simulation</h1>
+    <form id="simForm">
+      <input type="text" id="job" placeholder="Enter Job Title" required>
+      <input type="text" id="company" placeholder="Enter Company Name" required>
+      <button type="submit">Start Simulation</button>
+    </form>
+    <div id="scenarioBox" class="hidden">
+      <pre id="scenarioText"></pre>
+      <button id="nextBtn">Next Scenario</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
