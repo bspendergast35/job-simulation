@@ -21,6 +21,17 @@ async function loadScenario() {
   const company = document.getElementById('company').value;
 
   const res = await fetch('https://job-simulation.onrender.com', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    job: jobTitle,
+    company: companyName,
+    scenarioNumber: currentScenario, // or just `1` if hardcoded
+  }),
+});
+
 
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
