@@ -27,7 +27,8 @@
       scenarioDiv.textContent = 'Loading...';
 
       try {
-        const response = await fetch('https://job-simulation.onrender.com/generate', {
+       const response = await fetch('https://job-simulation.onrender.com/generate', {
+
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
